@@ -28,7 +28,7 @@ A challenge I encountered while solving this was the number of nested subqueries
 The task was to help the business flag inactive accounts within a 1 year period.
 
 ### My Approach
-I solved this with the use of CTEs, conditional statements, and aggregate functions. My methods and thought process are highlighted in the bullet points below:
+- I solved this with the use of CTEs, conditional statements, and aggregate functions. My methods and thought process are highlighted in the bullet points below:
 1. Similar to my approach in Assesment_Q1, I started by segmenting plan types into Savings or Investment plans with the use of case statements within a CTE.
 2. I proceeded to writing a CTE which utilized the aggregate function - Max to retrieve customers' last transaction dates.
 3. The final query calculated the number of days since the last transaction till date; I also filtered out cases above 365 days (1 year) using the Having clause.
@@ -40,7 +40,7 @@ A challenge I encountered in solving this question was in ensuring an that the q
 The task was to help the business estimate Customer Lifetime Value (CLV) based on account tenure (months since sign_up), and transaction volume (number of transactions)
 
 ### My Approach
-I solved this with the use of CTEs, aAggreagate functions, and joins. My methods and thought process are highlighted in the bullet points below:
+- I solved this with the use of CTEs, aAggreagate functions, and joins. My methods and thought process are highlighted in the bullet points below:
 1. I created a CTE to retrieve the number of months since sign_up for each customer id using the TIMESTAMPDIFF function.
 2. I proceeded to retrive the total number of transactions and the average profit per transaction for each customer with the use of a CTE and aggregate function.
 3. The final query joined both CTEs together, and calculated the estimated CTE based on the the calculated columns profit per transaction, and the total number of transactions in step 2 above.
