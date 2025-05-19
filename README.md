@@ -10,7 +10,7 @@ The task was to help the business identify high value customers who have both a 
 3. I proceeded to join both CTEs to the users table in order to derive total deposit and count of plans in one view as required in the problem statement.
 
 ### Challenges
-A challenge I encountered solving this question was knowing which column is useful in solving the question, seeing it was the first question in the assessment. To overcome this, I exported a list of all the column names across tables using the Describe table_name e.g "Describe savings_savingsaccount" syntax, I transfered this to a spreadsheet which enabled me acquaint myself with all the columns. This technique helped me all through the assessment.
+A challenge I encountered solving this question was in knowing which column was useful in solving the question, seeing it was the first question in the assessment. To overcome this, I exported a list of all the column names across tables using the Describe table_name function e.g "Describe savings_savingsaccount" syntax, I transfered this to a spreadsheet which enabled me acquaint myself with all the columns. This technique helped me all through the assessment.
 
 ## Assessment_Q2
 The task was help the business understand how frequent customers transacted in order to enable customer clustering based on the frequency of purchase.
