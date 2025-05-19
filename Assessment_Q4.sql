@@ -14,8 +14,8 @@ customer_transactions AS (
 	SELECT
 		owner_id,
         COUNT(*) AS total_transactions,
-        SUM(confirmed_amount) AS total_amount,
-        (SUM(confirmed_amount) / COUNT(*)) * 0.001 AS avg_profit_per_transaction
+        SUM(confirmed_amount/ 100) AS total_amount,  -- Division by 100 to convert from Kobo to Naira
+        (SUM(confirmed_amount/ 100) / COUNT(*)) * 0.001 AS avg_profit_per_transaction
 	FROM
 		savings_savingsaccount
 	GROUP BY
